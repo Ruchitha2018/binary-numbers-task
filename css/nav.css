@@ -1,5 +1,8 @@
 nav {
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.15);
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
 }
 .navbar-brand {
   color: #007FB2;
@@ -11,4 +14,12 @@ nav a {
   border-radius: 0px;
   border: 1px solid #F7F8F9;
   /* width: 450px !important; */
+}
+.right-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+..profile-click {
+    padding-left: 6px !important;
 }
