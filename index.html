@@ -4,42 +4,51 @@
   <title></title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Signika:wght@500&family=Cabin+Sketch&family=Nunito:wght@300&display=swap" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/left-sidebar.css">
+  <link rel="stylesheet" href="css/right-sidebar.css">
+  <link rel="stylesheet" href="css/main-content.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src = "main.js"></script>
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-sm navbar-white bg-white">
+  <nav class="navbar navbar-expand-sm navbar-white bg-white sticky-top">
     <a class="navbar-brand" href="#"> <i class = "fa fa-linkedin"></i></a>
-      <ul class="nav navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Discover</a>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav mx-auto">
-        <form class="form-inline">
-          <input class="nav-form-search form-control" type="search" placeholder="Search linkedin" aria-label="Search">
-        </form>
-      </ul>
-      <ul class="nav navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#"><i class = "fa fa-comment"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><i class = "fa fa-flag"></i></a>
-        </li>
-      </ul>
+    <ul class="nav navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Discover</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav mx-auto">
+      <form class="form">
+        <input class="nav-form-search form-control" type="search" placeholder="Search linkedin" aria-label="Search">
+      </form>
+    </ul>
+    <ul class="nav navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class = "fa fa-comment"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link profile-click" href = "#">Profile</a>
+      </li>
+    </ul>
   </nav> <!--End Nav Bar-->
 
   <div class = "container">
     <div class = "row">
-      <div class = "col-md-3">
-        <div class = "box profile">
+      <div class = "col-md-3 left-sidebar">
+        <div class = " card profile">
           <div class = "profile-icon">
             <img src = "images/profile-icon.png" class = "profile-icon__image">
           </div>
@@ -58,144 +67,149 @@
             </div>
           </div>
           <div class = "profile-view">
-            <h6 class = "profile-view__btn">View my profile</h6>
+            <a href = "#" class = "profile-view__btn">View my profile</a>
           </div>
         </div>
-      </div> <!--End Right-Panel -->
+      </div><!--End left-sidebar-->
 
-      <div class = "col-md-6">
-        <div class = "row">
-          <div class = "col-md-12">
-            <div class = "box post-add">
-              <div class = "post-add__features">
-                <h6 class = "post-add__features-icon"><i class = "fa fa-share-alt"></i> Share an update</h6>
-                <h6 class = "post-add__features-icon"><i class = "fa fa-upload"></i> Upload a photo</h6>
-                <h6 class = "post-add__features-icon"><i class = "fa fa-pencil"></i> Write an article</h6>
-              </div>
-              <div class = "post-add__text">
-                <h5 class = "post-add__text-content">Write something...</h5>
-              </div>
+      <div class = "col-md-6 post">
+        <div class = "col-md-12">
+          <div class = "card post-add">
+            <div class = "post-add__features">
+              <h6 class = "post-add__features-icon"><i class = "fa fa-share-alt"></i> Share an update</h6>
+              <h6 class = "post-add__features-icon"><i class = "fa fa-upload"></i> Upload a photo</h6>
+              <h6 class = "post-add__features-icon"><i class = "fa fa-pencil"></i> Write an article</h6>
             </div>
-            <div class = "box post">
-              <div class = "post-author">
+            <div class = "post-add__text">
+              <textarea class = "post-add__text-content form-control" placeholder="write something..."></textarea>
+            </div>
+          </div>
+        </div><!--End Post add-->
+
+        <div class = "card post">
+          <div class = "post-author">
+            <div class = "post-author__icon">
+              <img src = "images/profile-icon.png" class = "post-author__icon-image">
+            </div>
+            <div class = "post-author__details">
+              <h5 class = "post-author__details-name">Caroline Belfort</h5>
+              <h6 class = "profile-author__details-role">Statton Oakmont</h6>
+            </div>
+            <div class = "post-author__datetime">
+              <h5 class = "post-author__datetime-time">3 hours</h5>
+            </div>
+          </div>
+
+          <div class = "post-content">
+            <p class = "post-content__text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
+            </div>
+
+            <div class = "post-social">
+              <h6 class = "post-social__icon"><a href = "#"><i class = "fa fa-heart-o"></i></a> 20</h6>
+              <h6 class = "post-social__icon"><a href = "#"><i class = "fa fa-comment-o"></i></a> 20 </h6>
+              <h6 class = "post-social__icon"><a href = "#"><i class = "fa fa-share-alt"></i></a></h6>
+            </div>
+
+            <div class = "post-comment">
+              <div class = "post-comment__card">
                 <div class = "post-author__icon">
                   <img src = "images/profile-icon.png" class = "post-author__icon-image">
                 </div>
                 <div class = "post-author__details">
                   <h5 class = "post-author__details-name">Caroline Belfort</h5>
-                  <h6 class = "profile-author__details-role">Statton Oakmont</h6>
+                  <h6 class = "profile-author__details-role">Lorem Ipsum is simply dummy text</h6>
                 </div>
                 <div class = "post-author__datetime">
-                  <h5 class = "post-author__datetime-time">3 hours</h5>
+                  <h6 class = "post-author__datetime-time">10 min</h6>
                 </div>
               </div>
 
-              <div class = "post-content">
-                <p class = "post-content__text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                  industry's standard dummy text
-                  ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
+              <div class = "post-comment__card">
+                <div class = "post-author__icon">
+                  <img src = "images/profile-icon.png" class = "post-author__icon-image">
                 </div>
-
-                <div class = "post-social">
-                  <h6 class = "post-social__icon"><i class = "fa fa-heart-o"></i> 2</h6>
-                  <h6 class = "post-social__icon"><i class = "fa fa-comment-o"></i> 2 </h6>
-                  <h6 class = "post-social__icon"><i class = "fa fa-share-alt"></i></h6>
+                <div class = "post-author__details">
+                  <h5 class = "post-author__details-name">Caroline Belfort</h5>
+                  <h6 class = "profile-author__details-role">Lorem Ipsum is simply dummy text</h6>
                 </div>
-                <div class = "post-comment">
-                  <div class = "post-comment__card">
-                    <div class = "post-author__icon">
-                      <img src = "images/profile-icon.png" class = "post-author__icon-image">
-                    </div>
-                    <div class = "post-author__details">
-                      <h5 class = "post-author__details-name">Caroline Belfort</h5>
-                      <h6 class = "profile-author__details-role">Lorem Ipsum is simply dummy text</h6>
-                    </div>
-                    <div class = "post-author__datetime">
-                      <h6 class = "post-author__datetime-time">10 min</h6>
-                    </div>
-                  </div>
-                  <div class = "post-comment__card">
-                    <div class = "post-author__icon">
-                      <img src = "images/profile-icon.png" class = "post-author__icon-image">
-                    </div>
-                    <div class = "post-author__details">
-                      <h5 class = "post-author__details-name">Caroline Belfort</h5>
-                      <h6 class = "profile-author__details-role">Lorem Ipsum is simply dummy text</h6>
-                    </div>
-                    <div class = "post-author__datetime">
-                      <h6 class = "post-author__datetime-time">10 min</h6>
-                    </div>
-                  </div>
-
-                  <div class = "post-add-comment">
-                    <p class = "post-add-comment__text"> Add comment </p>
-                  </div>
+                <div class = "post-author__datetime">
+                  <h6 class = "post-author__datetime-time">10 min</h6>
                 </div>
-              </div><!--End Post -->
+              </div>
 
-              <div class = "box post">
-                <div class = "post-author">
+              <div class = "post-add-comment">
+                <textarea class = "post-add-comment__text form-control" placeholder="Add comment"></textarea>
+              </div>
+              
+            </div>
+          </div><!--End Post-->
+
+          <div class = "card post">
+            <div class = "post-author">
+              <div class = "post-author__icon">
+                <img src = "images/profile-icon.png" class = "post-author__icon-image">
+              </div>
+              <div class = "post-author__details">
+                <h5 class = "post-author__details-name">Caroline Belfort</h5>
+                <h6 class = "profile-author__details-role">Statton Oakmont</h6>
+              </div>
+              <div class = "post-author__datetime">
+                <h5 class = "post-author__datetime-time">3 hours</h5>
+              </div>
+            </div>
+
+            <div class = "post-content">
+              <p class = "post-content__text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text
+                ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
+              </div>
+
+              <div class = "post-social">
+                <h6 class = "post-social__icon"><a href = "#"><i class = "fa fa-heart-o"></i></a> 20</h6>
+                <h6 class = "post-social__icon"><a href = "#"><i class = "fa fa-comment-o"></i></a> 20 </h6>
+                <h6 class = "post-social__icon"><a href = "#"><i class = "fa fa-share-alt"></i></a></h6>
+              </div>
+
+              <div class = "post-comment">
+                <div class = "post-comment__card">
                   <div class = "post-author__icon">
                     <img src = "images/profile-icon.png" class = "post-author__icon-image">
                   </div>
                   <div class = "post-author__details">
                     <h5 class = "post-author__details-name">Caroline Belfort</h5>
-                    <h6 class = "profile-author__details-role">Statton Oakmont</h6>
+                    <h6 class = "profile-author__details-role">Lorem Ipsum is simply dummy text</h6>
                   </div>
                   <div class = "post-author__datetime">
-                    <h5 class = "post-author__datetime-time">3 hours</h5>
+                    <h6 class = "post-author__datetime-time">10 min</h6>
                   </div>
                 </div>
 
-                <div class = "post-content">
-                  <p class = "post-content__text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text
-                    ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
+                <div class = "post-comment__card">
+                  <div class = "post-author__icon">
+                    <img src = "images/profile-icon.png" class = "post-author__icon-image">
                   </div>
+                  <div class = "post-author__details">
+                    <h5 class = "post-author__details-name">Caroline Belfort</h5>
+                    <h6 class = "profile-author__details-role">Lorem Ipsum is simply dummy text</h6>
+                  </div>
+                  <div class = "post-author__datetime">
+                    <h6 class = "post-author__datetime-time">10 min</h6>
+                  </div>
+                </div>
 
-                  <div class = "post-social">
-                    <h6 class = "post-social__icon"><i class = "fa fa-heart-o"></i> 2</h6>
-                    <h6 class = "post-social__icon"><i class = "fa fa-comment-o"></i> 2 </h6>
-                    <h6 class = "post-social__icon"><i class = "fa fa-share-alt"></i></h6>
-                  </div>
-                  <div class = "post-comment">
-                    <div class = "post-comment__card">
-                      <div class = "post-author__icon">
-                        <img src = "images/profile-icon.png" class = "post-author__icon-image">
-                      </div>
-                      <div class = "post-author__details">
-                        <h5 class = "post-author__details-name">Caroline Belfort</h5>
-                        <h6 class = "profile-author__details-role">Lorem Ipsum is simply dummy text</h6>
-                      </div>
-                      <div class = "post-author__datetime">
-                        <h6 class = "post-author__datetime-time">10 min</h6>
-                      </div>
-                    </div>
-                    <div class = "post-comment__card">
-                      <div class = "post-author__icon">
-                        <img src = "images/profile-icon.png" class = "post-author__icon-image">
-                      </div>
-                      <div class = "post-author__details">
-                        <h5 class = "post-author__details-name">Caroline Belfort</h5>
-                        <h6 class = "profile-author__details-role">Lorem Ipsum is simply dummy text</h6>
-                      </div>
-                      <div class = "post-author__datetime">
-                        <h6 class = "post-author__datetime-time">10 min</h6>
-                      </div>
-                    </div>
-
-                    <div class = "post-add-comment">
-                      <p class = "post-add-comment__text"> Add comment </p>
-                    </div>
-                  </div>
-                </div><!--End Post -->
+                <div class = "post-add-comment">
+                  <textarea class = "post-add-comment__text form-control" placeholder="Add comment"></textarea>
+                </div>
 
               </div>
-            </div>
-          </div>
+            </div><!--End Post-->
+
+          </div><!--End Main-content-->
 
           <div class = "col-md-3">
-            <div class = "box feeds">
+            <div class = "card right-sidebar feeds">
               <h6 class = "feeds-heading">Keep in touch</h6>
               <div class = "feeds-card">
                 <div class = "feeds-icon">
@@ -225,9 +239,8 @@
                 </div>
               </div>
             </div>
-          </div><!--End Left Panel Section-->
+          </div><!--End right-sidebar-->
 
         </div>
-      </div>
-    </body>
-    </html>
+      </body>
+      </html>

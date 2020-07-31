@@ -1,0 +1,14 @@
+nav {
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.15);
+}
+.navbar-brand {
+  color: #007FB2;
+}
+nav a {
+  color: #A9A9A9;
+}
+.nav-form-search {
+  border-radius: 0px;
+  border: 1px solid #F7F8F9;
+  /* width: 450px !important; */
+}

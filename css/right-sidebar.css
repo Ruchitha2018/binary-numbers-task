@@ -1,0 +1,30 @@
+.feeds {
+  position: sticky;
+  top: 4em;
+}
+.feeds-heading {
+  font-weight: bold;
+  padding: 20px;
+  border-bottom: 1px solid #EEE;
+}
+.feeds-card {
+  display: flex;
+  padding: 10px 15px 10px 15px;
+}
+.feeds-icon__image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+.feeds-card__details {
+  text-align: left;
+}
+.feeds-card__name {
+  font-weight: bolder;
+  font-size: 15px;
+}
+.feed-card__role {
+  font-size: 13px;
+  color: #bec1c6;
+}
