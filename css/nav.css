@@ -19,7 +19,8 @@ nav a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-left: auto;
 }
-..profile-click {
-    padding-left: 6px !important;
+.profile-click {
+  padding-left: 10px !important;
 }
