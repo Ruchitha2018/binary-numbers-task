@@ -1,0 +1,112 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  background: #F7F8F9
+}
+.box-sticky {
+  position: sticky;
+  top: 4em;
+}
+.box {
+  background: white;
+  border: 1px solid #F0F0F0;
+  padding-top: 20px;
+  margin-top: 10px;
+}
+.box-content {
+  padding: 15px;
+}
+
+/* Content position*/
+
+.content-flex {
+  display: flex;
+  /* justify-content: space-between; */
+}
+.content-justify {
+  justify-content: space-between;
+  padding: 1px;
+}
+
+/* Padding Text */
+.small-padding {
+  padding: 10px ;
+}
+
+/*Font awesome padding*/
+.fa-pad {
+  padding: 10px;
+}
+/* Alignment of image*/
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img-left {
+  margin-left: auto;
+  display: block;
+}
+.img-right {
+  margin-right: auto;
+  display: block;
+}
+.img-width--full {
+  width: 100%;
+}
+
+/*Size of image*/
+.medium-img {
+  width: 80%;
+}
+
+/* Alignment of box-content*/
+.box-content--right {
+  margin-right: auto;
+  display: block;
+  padding-left: 1px;
+}
+/*Alignment of text*/
+.text-center {
+  text-align: center !important;
+}
+
+/* border color */
+.border-grey {
+  border: 1px solid #F0F0F0;
+}
+.border-grey--top {
+  border-top: 1px solid #F0F0F0;
+}
+.border-grey--bottom {
+  border-bottom: 1px solid #F0F0F0;
+}
+.border-transparent {
+  border: 1px solid transparent;
+}
+
+/* text color */
+.grey-text {
+  color: #bec1c6;
+}
+
+/* font size */
+.small-font {
+  font-size: 14px;
+}
+.medium-font {
+  font-size: 16px;
+}
+
+/* font weight */
+.font-bold {
+  font-weight: bold;
+}
+
+/*Tabs*/
+.tabs .nav-link {
+  color: #bec1c6;
+}
+.tabs .active {
+  color: black;
+  border-bottom: 2px solid #0056b3;
+}

@@ -4,16 +4,10 @@
   <title></title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-
-  <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/nav.css">
-  <link rel="stylesheet" href="css/left-sidebar.css">
-  <link rel="stylesheet" href="css/right-sidebar.css">
-  <link rel="stylesheet" href="css/main-content.css">
-  <link rel="stylesheet" href="css/responsive.css">
-
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -44,203 +38,265 @@
       </li>
     </ul>
   </nav> <!--End Nav Bar-->
-
   <div class = "container">
-    <div class = "row">
-      <div class = "col-md-3 left-sidebar">
-        <div class = " card profile">
-          <div class = "profile-icon">
-            <img src = "images/profile-icon.png" class = "profile-icon__image">
-          </div>
-          <div class = "profile-details">
-            <h5 class = "profile-details__name">Caroline Belfort</h5>
-            <h6 class = "profile-details__role">Statton Oakmont</h6>
-          </div>
-          <div class = "profile-stats">
-            <div class = "profile-stats__connections">
-              <h5 class = "profile-stats__number">358</h5>
-              <h6 class = "profile-stats__text">Connections</h6>
-            </div>
-            <div class = "profile-stats__views">
-              <h5 class = "profile-stats__number">358</h5>
-              <h6 class = "profile-stats__text">Views</h6>
-            </div>
-          </div>
-          <div class = "profile-view">
-            <a href = "#" class = "profile-view__btn">View my profile</a>
-          </div>
-        </div>
-      </div><!--End left-sidebar-->
-
-      <div class = "col-md-6 post">
-        <div class = "col-md-12">
-          <div class = "card post-add">
-            <div class = "post-add__features">
-              <h6 class = "post-add__features-icon"><i class = "fa fa-share-alt"></i> Share an update</h6>
-              <h6 class = "post-add__features-icon"><i class = "fa fa-upload"></i> Upload a photo</h6>
-              <h6 class = "post-add__features-icon"><i class = "fa fa-pencil"></i> Write an article</h6>
-            </div>
-            <div class = "post-add__text">
-              <textarea class = "post-add__text-content form-control" placeholder="write something..."></textarea>
-            </div>
-          </div>
-        </div><!--End Post add-->
-
-        <div class = "card post">
-          <div class = "post-author">
-            <div class = "post-author__icon">
-              <img src = "images/profile-icon.png" class = "post-author__icon-image">
-            </div>
-            <div class = "post-author__details">
-              <h5 class = "post-author__details-name">Caroline Belfort</h5>
-              <h6 class = "profile-author__details-role">Statton Oakmont</h6>
-            </div>
-            <div class = "post-author__datetime">
-              <h5 class = "post-author__datetime-time">3 hours</h5>
-            </div>
-          </div>
-
-          <div class = "post-content">
-            <p class = "post-content__text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
-            </div>
-
-            <div class = "post-social">
-              <h6 class = "post-social__icon"><a href = "#"><i class = "fa fa-heart-o"></i></a> 20</h6>
-              <h6 class = "post-social__icon"><a href = "#"><i class = "fa fa-comment-o"></i></a> 20 </h6>
-              <h6 class = "post-social__icon"><a href = "#"><i class = "fa fa-share-alt"></i></a></h6>
-            </div>
-
-            <div class = "post-comment">
-              <div class = "post-comment__card">
-                <div class = "post-author__icon">
-                  <img src = "images/profile-icon.png" class = "post-author__icon-image">
-                </div>
-                <div class = "post-author__details">
-                  <h5 class = "post-author__details-name">Caroline Belfort</h5>
-                  <h6 class = "profile-author__details-role">Lorem Ipsum is simply dummy text</h6>
-                </div>
-                <div class = "post-author__datetime">
-                  <h6 class = "post-author__datetime-time">10 min</h6>
-                </div>
-              </div>
-
-              <div class = "post-comment__card">
-                <div class = "post-author__icon">
-                  <img src = "images/profile-icon.png" class = "post-author__icon-image">
-                </div>
-                <div class = "post-author__details">
-                  <h5 class = "post-author__details-name">Caroline Belfort</h5>
-                  <h6 class = "profile-author__details-role">Lorem Ipsum is simply dummy text</h6>
-                </div>
-                <div class = "post-author__datetime">
-                  <h6 class = "post-author__datetime-time">10 min</h6>
-                </div>
-              </div>
-
-              <div class = "post-add-comment">
-                <textarea class = "post-add-comment__text form-control" placeholder="Add comment"></textarea>
-              </div>
-
-            </div>
-          </div><!--End Post-->
-
-          <div class = "card post">
-            <div class = "post-author">
-              <div class = "post-author__icon">
-                <img src = "images/profile-icon.png" class = "post-author__icon-image">
-              </div>
-              <div class = "post-author__details">
-                <h5 class = "post-author__details-name">Caroline Belfort</h5>
-                <h6 class = "profile-author__details-role">Statton Oakmont</h6>
-              </div>
-              <div class = "post-author__datetime">
-                <h5 class = "post-author__datetime-time">3 hours</h5>
+    <div class = "row box-content">
+      <div class = "col-md-12 border-grey--bottom">
+        <ul class="nav justify-content-center tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active small-font" id="home-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">
+              Posts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link small-font" id="profile-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">
+                Articles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link small-font" id="contact-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">
+                  Companies</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link small-font" id="contact-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">
+                    Jobs</a>
+                  </li>
+                </ul>
               </div>
             </div>
 
-            <div class = "post-content">
-              <p class = "post-content__text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text
-                ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
-              </div>
-
-              <div class = "post-social">
-                <h6 class = "post-social__icon"><a href = "#"><i class = "fa fa-heart-o"></i></a> 20</h6>
-                <h6 class = "post-social__icon"><a href = "#"><i class = "fa fa-comment-o"></i></a> 20 </h6>
-                <h6 class = "post-social__icon"><a href = "#"><i class = "fa fa-share-alt"></i></a></h6>
-              </div>
-
-              <div class = "post-comment">
-                <div class = "post-comment__card">
-                  <div class = "post-author__icon">
-                    <img src = "images/profile-icon.png" class = "post-author__icon-image">
+            <div class = "row">
+              <div class = "col-md-3 profile">
+                <div class = "box box-sticky">
+                  <div class = "box-img">
+                    <img class = "img-center" src = "images/profile-icon.png" />
                   </div>
-                  <div class = "post-author__details">
-                    <h5 class = "post-author__details-name">Caroline Belfort</h5>
-                    <h6 class = "profile-author__details-role">Lorem Ipsum is simply dummy text</h6>
+                  <div class = "box-content">
+                    <h5 class = "text-center">Caroline Belfort</h5>
+                    <h6 class = "text-center grey-text">Statton Oakmont</h6>
                   </div>
-                  <div class = "post-author__datetime">
-                    <h6 class = "post-author__datetime-time">10 min</h6>
+                  <div class = "content-flex border-grey content-justify">
+                    <div class = "box-content">
+                      <h5 class = "text-center font-bold small-font">356</h5>
+                      <h6 class = "text-center grey-text small-font">Connections</h6>
+                    </div>
+                    <div class = "box-content">
+                      <h5 class = "text-center font-bold small-font">25</h5>
+                      <h6 class = "text-center grey-text small-font">Views</h6>
+                    </div>
+                  </div>
+                  <div class = "box-content box-btn">
+                    <h6 class = "text-center">
+                      <a href = "">View my profile</a>
+                    </h6>
                   </div>
                 </div>
+              </div> <!--End col-md-3 Profile-->
 
-                <div class = "post-comment__card">
-                  <div class = "post-author__icon">
-                    <img src = "images/profile-icon.png" class = "post-author__icon-image">
+              <div class = "col-md-6 posts">
+                <div class = "box">
+                  <ul class="nav justify-content-center tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">
+                        <i class = "fa fa-share-alt"></i> Share an update</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">
+                          <i class = "fa fa-upload"></i> Upload a photo</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">
+                            <i class = "fa fa-pencil"></i> Write an article</a>
+                          </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                          <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1">
+                            <div class = "box-content border-grey--top">
+                              <textarea class = "border-transparent form-control" placeholder="write something..."></textarea>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2">Hello</div>
+                          <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3">Hello</div>
+                        </div>
+                      </div>
+
+                      <div class = "box small-padding">
+                        <div class = "box-content content-flex">
+                          <div class = "box-img">
+                            <img class = "medium-img img-right" src = "images/profile-icon.png" />
+                          </div>
+                          <div class = "box-content--right">
+                            <h5 class = "font-bold medium-font">Caroline Belfort</h5>
+                            <h6 class = "grey-text small-font">Statton Oakmont</h6>
+                          </div>
+                          <div class = "">
+                            <h5 class = "grey-text small-font">3 hours</h5>
+                          </div>
+                        </div>
+
+                        <div class = "box-content border-grey--top border-grey--bottom">
+                          <p class = "grey-text small-font">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled</p>
+                          </div>
+
+                          <div class = "content-flex">
+                            <h6 class = "grey-text fa-pad"><a href = "#" class = "grey-text"><i class = "fa fa-heart-o"></i></a> 20</h6>
+                            <h6 class = "grey-text fa-pad"><a href = "#" class = "grey-text"><i class = "fa fa-comment-o"></i></a> 20 </h6>
+                            <h6 class = "grey-text fa-pad"><a href = "#" class = "grey-text"><i class = "fa fa-share-alt"></i></a></h6>
+                          </div>
+                          <div class = "box-content">
+                            <div class = "box-content content-flex  border-grey--top">
+                              <div class = "box-img">
+                                <img class = "medium-img" src = "images/profile-icon.png" />
+                              </div>
+                              <div class = "box-content--right">
+                                <h5 class = "font-bold small-font">Caroline Belfort</h5>
+                                <h6 class = "grey-text small-font">Statton Oakmont</h6>
+                              </div>
+                              <div>
+                                <h5 class = "grey-text small-font">10 mins</h5>
+                              </div>
+                            </div>
+
+                            <div class = "box-content content-flex  border-grey--top">
+                              <div class = "box-img">
+                                <img class = "medium-img" src = "images/profile-icon.png" />
+                              </div>
+                              <div class = "box-content--right">
+                                <h5 class = "font-bold small-font">Caroline Belfort</h5>
+                                <h6 class = "grey-text small-font">Statton Oakmont</h6>
+                              </div>
+                              <div>
+                                <h5 class = "grey-text small-font">10 mins</h5>
+                              </div>
+                            </div>
+
+                            <div class = "box-content content-flex border-grey--top">
+                              <div class = "box-img">
+                                <img class = "medium-img" src = "images/profile-icon.png" />
+                              </div>
+                              <div class = "box-content--right">
+                                <h5 class = "font-bold small-font">Caroline Belfort</h5>
+                                <h6 class = "grey-text small-font">Statton Oakmont</h6>
+                              </div>
+                              <div>
+                                <h5 class = "grey-text small-font">10 mins</h5>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class = "box-content border-grey--top">
+                            <textarea class = "form-control border-transparent" placeholder="Add comment"></textarea>
+                          </div>
+                        </div>
+
+                        <div class = "box small-padding">
+                          <div class = "box-content content-flex">
+                            <div class = "box-img">
+                              <img class = "medium-img img-right" src = "images/profile-icon.png" />
+                            </div>
+                            <div class = "box-content--right">
+                              <h5 class = "font-bold medium-font">Caroline Belfort</h5>
+                              <h6 class = "grey-text small-font">Statton Oakmont</h6>
+                            </div>
+                            <div class = "">
+                              <h5 class = "grey-text small-font">3 hours</h5>
+                            </div>
+                          </div>
+
+                          <div class = "box-content border-grey--top border-grey--bottom">
+                            <img class = "img-width--full" src = "images/background.jpg">
+                          </div>
+
+                          <div class = "content-flex">
+                            <h6 class = "grey-text fa-pad"><a href = "#" class = "grey-text"><i class = "fa fa-heart-o"></i></a> 20</h6>
+                            <h6 class = "grey-text fa-pad"><a href = "#" class = "grey-text"><i class = "fa fa-comment-o"></i></a> 20 </h6>
+                            <h6 class = "grey-text fa-pad"><a href = "#" class = "grey-text"><i class = "fa fa-share-alt"></i></a></h6>
+                          </div>
+                          <div class = "box-content">
+                            <div class = "box-content content-flex  border-grey--top">
+                              <div class = "box-img">
+                                <img class = "medium-img" src = "images/profile-icon.png" />
+                              </div>
+                              <div class = "box-content--right">
+                                <h5 class = "font-bold small-font">Caroline Belfort</h5>
+                                <h6 class = "grey-text small-font">Statton Oakmont</h6>
+                              </div>
+                              <div>
+                                <h5 class = "grey-text small-font">10 mins</h5>
+                              </div>
+                            </div>
+
+                            <div class = "box-content content-flex  border-grey--top">
+                              <div class = "box-img">
+                                <img class = "medium-img" src = "images/profile-icon.png" />
+                              </div>
+                              <div class = "box-content--right">
+                                <h5 class = "font-bold small-font">Caroline Belfort</h5>
+                                <h6 class = "grey-text small-font">Statton Oakmont</h6>
+                              </div>
+                              <div>
+                                <h5 class = "grey-text small-font">10 mins</h5>
+                              </div>
+                            </div>
+
+                            <div class = "box-content content-flex border-grey--top">
+                              <div class = "box-img">
+                                <img class = "medium-img" src = "images/profile-icon.png" />
+                              </div>
+                              <div class = "box-content--right">
+                                <h5 class = "font-bold small-font">Caroline Belfort</h5>
+                                <h6 class = "grey-text small-font">Statton Oakmont</h6>
+                              </div>
+                              <div>
+                                <h5 class = "grey-text small-font">10 mins</h5>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class = "box-content border-grey--top">
+                            <textarea class = "form-control border-transparent" placeholder="Add comment"></textarea>
+                          </div>
+                        </div>
+                      </div> <!--End col-md-6  -->
+
+                      <div class = "col-md-3 feeds">
+                        <div class = "box box-sticky">
+                          <div class = "box-content">
+                            <h6 class = "font-bold">Keep in touch</h6>
+                          </div>
+                          <div class = "box-content content-flex border-grey--top">
+                            <div class = "box-img">
+                              <img class = "medium-img" src = "images/profile-icon.png" />
+                            </div>
+                            <div class = "box-content--right">
+                              <h5 class = "font-bold medium-font">Caroline Belfort</h5>
+                              <h6 class = "grey-text small-font">Statton Oakmont</h6>
+                            </div>
+                          </div>
+
+                          <div class = "box-content content-flex">
+                            <div class = "box-img">
+                              <img class = "medium-img" src = "images/profile-icon.png" />
+                            </div>
+                            <div class = "box-content--right">
+                              <h5 class = "font-bold medium-font">Caroline Belfort</h5>
+                              <h6 class = "grey-text small-font">Statton Oakmont</h6>
+                            </div>
+                          </div>
+
+                          <div class = "box-content content-flex">
+                            <div class = "box-img">
+                              <img class = "medium-img" src = "images/profile-icon.png" />
+                            </div>
+                            <div class = "box-content--right">
+                              <h5 class = "font-bold medium-font">Caroline Belfort</h5>
+                              <h6 class = "grey-text small-font">Statton Oakmont</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div> <!--End col-md-3 feeds-->
+
+                    </div>
                   </div>
-                  <div class = "post-author__details">
-                    <h5 class = "post-author__details-name">Caroline Belfort</h5>
-                    <h6 class = "profile-author__details-role">Lorem Ipsum is simply dummy text</h6>
-                  </div>
-                  <div class = "post-author__datetime">
-                    <h6 class = "post-author__datetime-time">10 min</h6>
-                  </div>
-                </div>
 
-                <div class = "post-add-comment">
-                  <textarea class = "post-add-comment__text form-control" placeholder="Add comment"></textarea>
-                </div>
-
-              </div>
-            </div><!--End Post-->
-
-          </div><!--End Main-content-->
-
-          <div class = "col-md-3">
-            <div class = "card right-sidebar feeds">
-              <h6 class = "feeds-heading">Keep in touch</h6>
-              <div class = "feeds-card">
-                <div class = "feeds-icon">
-                  <img src = "images/profile-icon.png" class = "feeds-icon__image">
-                </div>
-                <div class = "feeds-card__details">
-                  <h5 class = "feeds-card__name">Caroline Belfort</h5>
-                  <h6 class = "feed-card__role">Statton Oakmont</h6>
-                </div>
-              </div>
-              <div class = "feeds-card">
-                <div class = "feeds-icon">
-                  <img src = "images/profile-icon.png" class = "feeds-icon__image">
-                </div>
-                <div class = "feeds-card__details">
-                  <h5 class = "feeds-card__name">Caroline Belfort</h5>
-                  <h6 class = "feed-card__role">Statton Oakmont</h6>
-                </div>
-              </div>
-              <div class = "feeds-card">
-                <div class = "feeds-icon">
-                  <img src = "images/profile-icon.png" class = "feeds-icon__image">
-                </div>
-                <div class = "feeds-card__details">
-                  <h5 class = "feeds-card__name">Caroline Belfort</h5>
-                  <h6 class = "feed-card__role">Statton Oakmont</h6>
-                </div>
-              </div>
-            </div>
-          </div><!--End right-sidebar-->
-
-        </div>
-      </body>
-      </html>
+                </body>
+                </html>
