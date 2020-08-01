@@ -1,6 +1,6 @@
 $(function() {
        $('.profile-click').click(function() {
-           $('.left-sidebar').animate({
+           $('.profile').animate({
               height: "toggle"
              });
        });
