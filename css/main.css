@@ -5,72 +5,82 @@ body {
 nav {
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.15);
 }
-.box-sticky {
-  position: sticky;
-  top: 4em;
-}
-.box {
-  background: white;
-  border: 1px solid #F0F0F0;
-  padding-top: 20px;
-  margin-top: 10px;
-}
-.box-content {
-  padding: 10px;
-}
 .nav-form-search {
   background: #F7F8F9;
   border: 1px solid #F7F8F9;
 }
-
-/* Padding Text */
-.small-padding {
-  padding: 10px ;
+.box {
+  background: white;
+  border: 1px solid #F0F0F0;
+  margin-bottom: 20px;
 }
-
-/* Alignment of image*/
-.img-center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.box-inner {
+  padding: 14px 14px 0px 14px;
 }
-.img-left {
-  margin-left: auto;
-  display: block;
+.box-content {
+  padding: 10px;
 }
-.img-right {
-  margin-right: auto;
-  display: block;
-}
-.img-width--full {
-  width: 100%;
-}
-
-/*Size of image*/
-.medium-img {
-  width: 80%;
-}
-
-/* Alignment of box-content*/
 .box-content--right {
   margin-right: auto;
   display: block;
   padding-left: 1px;
 }
+.box-sticky {
+  position: sticky;
+  top: 4em;
+}
+/* size of a image*/
+.medium-img {
+  width: 80%;
+}
+/* IMAGE POSITION */
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.image-width--full {
+  width: 100%;
+}
 
-/* font size */
-.small-font {
+/*TEXT COLOR*/
+.text-blue {
+  color: #0058a2;
+}
+
+/*FONT SIZE*/
+.font-12 {
+  font-size: 12px;
+}
+.font-13 {
+  font-size: 13px;
+}
+.font-14 {
   font-size: 14px;
 }
-.medium-font {
-  font-size: 16px;
+.font-15 {
+  font-size: 15px;
+}
+.font-18 {
+  font-size: 18px;
 }
 
-/*Tabs*/
+/*BACKGROUND*/
+.red-bg {
+  color: red;
+}
+/*FONT WEIGHT*/
+.font-bold {
+  font-weight: bold;
+}
+
+/*TABS*/
 .tabs .nav-link {
   color: #bec1c6;
+  padding-bottom: 16px;
+  font-size: 15px;
 }
 .tabs .active {
   color: black;
-  border-bottom: 2px solid #0056b3;
+  border-bottom: 2px solid #1876AD;
 }
