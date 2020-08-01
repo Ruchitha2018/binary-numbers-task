@@ -8,7 +8,9 @@
   .profile-click {
     display: none;
   }
-
+  .nav-form-search {
+     width: 450px;
+  }
 }
 
 /*
@@ -20,6 +22,9 @@
 
   .profile-click {
     display: none;
+  }
+  .nav-form-search {
+     width: 450px;
   }
 
 }
@@ -33,6 +38,9 @@
 
   .profile-click {
     display: none;
+  }
+  .nav-form-search {
+     width: 450px;
   }
 
 }
