@@ -77,8 +77,8 @@ nav {
 /*TABS*/
 .tabs .nav-link {
   color: #bec1c6;
-  padding-bottom: 16px;
-  font-size: 15px;
+  padding-bottom: 1px;
+  font-size: 13px;
 }
 .tabs .active {
   color: black;
