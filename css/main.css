@@ -83,6 +83,9 @@ nav {
   padding-bottom: 15px;
   font-size: 15px;
 }
+.tabs .nav-link .fa {
+  padding-top: 05px;
+}
 .tabs .active {
   color: black;
   border-bottom: 2px solid #1876AD;

@@ -11,6 +11,9 @@
   .nav-form-search {
      width: 450px;
   }
+  .tabs .nav-link .fa {
+    padding-right: 10px;
+  }
 }
 
 /*
@@ -22,6 +25,9 @@
 
   .profile-click {
     display: none;
+  }
+  .tabs .nav-link .fa {
+    padding-right: 12px !important;
   }
   .nav-form-search {
      width: 450px;
@@ -42,6 +48,9 @@
   .nav-form-search {
      width: 450px;
   }
+  .tabs .nav-link .fa {
+    padding-right: 20px;
+  }
 
 }
 
@@ -54,6 +63,9 @@
 
   .tabs .nav-link {
       font-size: 14px;
+  }
+  .tabs .nav-link .fa {
+    padding-top: 10px;
   }
 
 }
@@ -68,6 +80,9 @@
   .tabs .nav-link {
       font-size: 14px;
   }
+  .tabs .nav-link .fa {
+    padding-top: 10px;
+  }
 
 }
 
@@ -80,6 +95,9 @@
 
   .tabs .nav-link {
       font-size: 14px;
+  }
+  .tabs .nav-link .fa {
+    padding-top: 10px;
   }
 
 }
