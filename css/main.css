@@ -78,9 +78,13 @@ nav {
 .tabs .nav-link {
   color: #bec1c6;
   padding-bottom: 1px;
-  font-size: 13px;
+  font-size: 15px;
 }
 .tabs .active {
   color: black;
   border-bottom: 2px solid #1876AD;
+}
+ul#myTab {
+    display: flex;
+    flex-wrap: nowrap !important;
 }
